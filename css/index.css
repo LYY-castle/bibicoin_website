@@ -1,0 +1,909 @@
+.go_up {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  animation: jump 1s linear infinite;
+}
+.go_up img {
+  width: 50px;
+}
+.phone .share {
+  display: none;
+}
+.title_pc {
+  display: block;
+}
+.title_phone {
+  display: none;
+}
+.nav {
+  width: 100%;
+  background-color: none;
+  background-color: #252532;
+  position: fixed;
+  left: 0;
+  top: 0;
+  line-height: 80px;
+  z-index: 999;
+  transition: all 1s linear;
+}
+.nav .top {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.nav .top .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.nav .top .logo .language {
+  display: none;
+  cursor: pointer;
+  margin-left: 20px;
+  position: absolute;
+  right: 40px;
+  top: 3px;
+}
+.nav .top .logo .language .select {
+  position: relative;
+}
+.nav .top .logo .language .select span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: -17px;
+  top: 24px;
+  background: url(../img/language.png) no-repeat;
+  background-size: contain;
+}
+.nav .top .logo .language .select .rotate180 {
+  top: 20px;
+  transform: rotate(180deg);
+}
+.nav .top .logo .language .languages {
+  display: none;
+  position: absolute;
+  right: -18px;
+  top: 60px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+.nav .top .logo .language .languages li {
+  width: 105px;
+  text-align: left;
+  padding: 0 20px;
+  line-height: 30px;
+}
+.nav .top .logo .language .languages li:hover {
+  background-color: #1c6df5;
+  color: #fff;
+}
+.nav .top .logo .logo_img {
+  width: 50px;
+  height: 50px;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 100% auto;
+}
+.nav .top .logo .more {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  display: none;
+}
+.nav .top .logo .more span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.nav .top .menu {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.nav .top .menu ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.nav .top .menu ul li {
+  width: 130px;
+  text-align: center;
+}
+.nav .top .menu ul li a {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  padding-bottom: 10px;
+  position: relative;
+}
+.nav .top .menu ul li a span {
+  display: none;
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav .top .menu ul .active span {
+  display: block;
+  transition: width 3s;
+}
+.nav .top .menu .btns {
+  width: 230px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav .top .menu .btns .page_btn {
+  cursor: pointer;
+}
+.nav .top .menu .btns .page_btn a {
+  width: 100px;
+  height: 30px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 5px 20px;
+}
+.nav .top .menu .btns .page_btn a:hover {
+  color: #1c6df5;
+}
+.nav .top .menu .btns .language {
+  cursor: pointer;
+  margin-left: 20px;
+  position: relative;
+}
+.nav .top .menu .btns .language .select {
+  position: relative;
+}
+.nav .top .menu .btns .language .select span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: -17px;
+  top: 37px;
+  background: url(../img/language.png) no-repeat;
+  background-size: contain;
+}
+.nav .top .menu .btns .language .select .rotate180 {
+  top: 33px;
+  transform: rotate(180deg);
+}
+.nav .top .menu .btns .language .languages {
+  display: none;
+  position: absolute;
+  right: -18px;
+  top: 60px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+.nav .top .menu .btns .language .languages li {
+  width: 105px;
+  padding: 0 20px;
+  text-align: left;
+  line-height: 30px;
+}
+.nav .top .menu .btns .language .languages li:hover {
+  background-color: #1c6df5;
+  color: #fff;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+}
+.main #home {
+  padding-bottom: 78px;
+  position: relative;
+}
+.main #home > div {
+  width: 100%;
+  height: 100%;
+  background: url(../img/background6.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main #home > div > img {
+  width: 100%;
+  height: auto;
+}
+.main #home > div .phone_banner {
+  display: none;
+}
+.main #home > div > div {
+  padding: 20% 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.main #home > div > div h1,
+.main #home > div > div p {
+  text-align: center;
+  color: #fff;
+  word-spacing: 10px;
+  letter-spacing: 5px;
+}
+.main #home > div > div h1 {
+  font-family: 'sans-serif';
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+.main #home > div > div p {
+  font-size: 25px;
+  padding: 20px 0;
+  letter-spacing: 3px;
+}
+.main #home > div > div .share {
+  width: 1170px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  background-color: #fff;
+  padding: 30px 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 10px #ccc;
+  cursor: pointer;
+}
+.main #home > div > div .share > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main #home > div > div .share > div .ring {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  margin-right: 15px;
+}
+.main #home > div > div .share > div .ring img {
+  width: 100%;
+}
+.main #home > div > div .share > div .text > div:nth-child(1) {
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 600;
+}
+.main #home > div > div .share > div .text > div:nth-child(1):after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #3566eb;
+}
+.main #home > div > div .share > div .text > div:nth-child(2) {
+  margin-top: 5px;
+  width: 190px;
+  font-size: 13px;
+}
+.main #page {
+  padding: 150px 0;
+}
+.main #page > div {
+  width: 1170px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.main #page > div .left {
+  width: 50%;
+}
+.main #page > div .left h1 {
+  font-size: 40px;
+  font-weight: normal;
+  color: #002;
+}
+.main #page > div .left p {
+  margin: 20px 0 50px 0;
+  width: 70%;
+  line-height: 26px;
+  font-weight: 600;
+}
+.main #page > div .left a {
+  display: inline-block;
+  padding: 8px 70px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: all 1s linear;
+}
+.main #page > div .left a:hover {
+  background: #000;
+  color: #fff;
+}
+.main #page > div .right {
+  width: 100%;
+  text-align: right;
+}
+.main #page > div .right img {
+  width: 100%;
+  height: 100%;
+}
+.main #service {
+  background: url(../img/background2.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main #service > div {
+  width: 1170px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main #service > div h1,
+.main #service > div p {
+  text-align: center;
+}
+.main #service > div h1 {
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 5px;
+}
+.main #service > div p {
+  margin: 20px 0 60px 0;
+}
+.main #service > div .card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  padding: 60px 0;
+}
+.main #service > div .card > div {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.main #service > div .card > div > div:nth-child(2) {
+  margin: 30px 0 10px 0;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+}
+.main #service > div .card > div > div:nth-child(2):after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 12px;
+  background-color: rgba(53, 102, 235, 0.2);
+}
+.main #service > div .card > div > div:nth-child(3) {
+  width: 100%;
+  font-weight: 600;
+}
+.main #service > div .card > div .logo {
+  text-align: center;
+}
+.main #service > div .card > div .logo img {
+  width: 100px;
+}
+.main #download {
+  padding: 150px 0;
+}
+.main #download > div {
+  background-position: left;
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+}
+.main #download > div .right {
+  width: 60%;
+  text-align: center;
+}
+.main #download > div .right h1 {
+  font-size: 40px;
+  font-weight: normal;
+  color: #002;
+}
+.main #download > div .right p {
+  margin: 20px 0 100px 0;
+  font-weight: 600;
+}
+.main #download > div .right .right_center {
+  display: none;
+}
+.main #download > div .right .scan {
+  display: flex;
+  justify-content: space-around;
+}
+.main #download > div .right .scan > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main #download > div .right .scan > div span {
+  display: inline-block;
+  width: 150px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.main #download > div .right .scan a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+  color: #fff;
+}
+.main #download > div .left {
+  width: 100%;
+}
+.main #download > div .left img {
+  width: 100%;
+  height: auto;
+}
+.main #about {
+  background: url(../img/background5.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main #about > div {
+  max-width: 1170px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+}
+.main #about > div h1 {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+.main #about > div p {
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.main #contact {
+  background: url(../img/background4.png) no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+.main #contact > div {
+  max-width: 1170px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 40px;
+}
+.main #contact > div h1 {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+.main #contact > div p {
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 600;
+}
+.main #contact > div > div {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main #contact > div > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  width: 33.33%;
+}
+.main #contact > div > div > div > div:nth-child(1) {
+  text-align: center;
+}
+.main #contact > div > div > div > div:nth-child(1) img {
+  height: 30px;
+}
+.main #contact > div > div > div > div:nth-child(2) {
+  margin-left: 20px;
+  font-weight: 600;
+}
+.main #contact > div > div > div > div:nth-child(3) {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -100%);
+  display: none;
+  color: #fff;
+}
+.main #contact > div > div > div > div:nth-child(3) img {
+  width: 150px;
+}
+.main #contact > div > div > div:hover > div:nth-child(3) {
+  display: block;
+}
+.main #contact > div > div .mail_text:hover {
+  color: #1c6df5;
+  text-decoration: underline;
+}
+.main #contact > div > div .telegraph:hover {
+  color: #1c6df5;
+  text-decoration: underline;
+}
+@media (max-width: 1170px) {
+  html,
+  body {
+    min-width: 100%;
+  }
+  h1 {
+    font-size: 20px!important;
+  }
+  p {
+    font-size: 14px;
+  }
+  .phone {
+    background-color: #fff;
+    padding: 30px 15px 0 15px;
+  }
+  .phone .share {
+    display: block;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+  .phone .share > div {
+    width: 50%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .phone .share > div .ring img {
+    width: 60px;
+    height: 60px;
+  }
+  .phone .share > div .text {
+    width: 80%;
+    padding-left: 15px;
+  }
+  .phone .share > div .text > div:nth-child(1) {
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 600;
+  }
+  .phone .share > div .text > div:nth-child(1):after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #3566eb;
+  }
+  .phone .share > div .text > div:nth-child(2) {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  .phone .share > div:last-child {
+    margin-bottom: 30px;
+  }
+  h1,
+  p {
+    width: auto!important;
+  }
+  p {
+    line-height: 25px!important;
+  }
+  .nav .top {
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .nav .top .logo {
+    width: 100%;
+    height: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: flex-start;
+  }
+  .nav .top .logo .select {
+    line-height: 55px;
+  }
+  .nav .top .logo .language {
+    display: block;
+  }
+  .nav .top .logo .language .languages li {
+    width: 65px;
+  }
+  .nav .top .logo img {
+    width: 100px;
+  }
+  .nav .top .logo .more {
+    display: block;
+    width: 30px;
+    height: 25px;
+    top: 16px;
+    background: url(../img/more.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .nav .top .logo .more span {
+    display: none;
+  }
+  .nav .top .menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    width: 100%;
+    background: #252532;
+  }
+  .nav .top .menu ul {
+    justify-content: center;
+    align-items: center;
+  }
+  .nav .top .menu ul li {
+    width: 100%;
+  }
+  .nav .top .menu ul li a {
+    width: auto;
+    font-size: 16px;
+  }
+  .nav .top .menu .btns {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .nav .top .menu .btns .language {
+    display: none;
+  }
+  .main {
+    margin-top: 55px;
+  }
+  .main #home {
+    padding-bottom: 0;
+  }
+  .main #home > div > div {
+    width: 100%;
+    height: 100%;
+    padding: 200px 20px;
+  }
+  .main #home > div > div h1 {
+    padding-top: 0;
+  }
+  .main #home > div > div p {
+    font-size: 14px;
+  }
+  .main #home > div > div .share {
+    display: none!important;
+  }
+  .main #page {
+    padding: 50px 15px;
+  }
+  .main #page > div {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main #page > div .left {
+    width: 100%;
+    text-align: center;
+  }
+  .main #page > div .left p {
+    width: auto;
+    margin: 20px 0;
+  }
+  .main #page > div .right {
+    width: 100%;
+    text-align: center;
+  }
+  .main #page > div .right img {
+    width: 50%;
+    height: auto;
+  }
+  .main #service {
+    padding: 0 15px;
+  }
+  .main #service > div {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .main #service > div p {
+    margin: 30px 0;
+    padding: 0;
+  }
+  .main #service > div .card {
+    background: 0;
+    justify-content: space-between;
+  }
+  .main #service > div .card > div:nth-child(1),
+  .main #service > div .card > div:nth-child(2) {
+    margin-bottom: 20px;
+  }
+  .main #service > div .card > div {
+    width: 49%;
+    background: #fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    height: 270px;
+  }
+  .main #service > div .card > div .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .main #service > div .card > div > div:nth-child(2) {
+    margin: 10px 0;
+  }
+  .main #download {
+    padding: 50px 0;
+  }
+  .main #download > div {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .main #download > div .right {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main #download > div .right p {
+    margin: 20px 0 0 0;
+  }
+  .main #download > div .right .right_center {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    margin: 50px 0 50px;
+  }
+  .main #download > div .right .right_center img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+  }
+  .main #about {
+    padding: 50px 15px;
+    width: 100%;
+    height: auto;
+    background: url(../img/bg5.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .main #about > div {
+    padding: 30px;
+    background: url(../img/bg6.png) no-repeat;
+    background-size: 100% 100%;
+  }
+  .main #about > div p {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .main #contact {
+    padding: 50px 15px;
+  }
+  .main #contact > div > div .rotate {
+    margin: 10px 0;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .main #contact > div > div .rotate > div:nth-child(1) img {
+    width: 30px;
+    height: auto;
+  }
+  .main #contact > div > div .rotate > div:nth-child(2) {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .phone .share > div {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .title_pc {
+    display: none;
+  }
+  .title_phone {
+    display: block;
+    letter-spacing: 3px;
+  }
+  .main #home .phone_banner {
+    display: block;
+  }
+  .main #home .pc_banner {
+    display: none;
+  }
+  .main #home > div h1 {
+    text-shadow: 5px 5px 5px #352929;
+    font-size: 23px!important;
+  }
+  .main #home > div p {
+    font-size: 18px!important;
+    margin-top: 20px;
+  }
+  .main #page > div {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .main #page > div .left {
+    width: 100%;
+    text-align: center;
+  }
+  .main #page > div .left p {
+    width: auto;
+    margin: 20px 0;
+  }
+  .main #page > div .right {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .main #page > div .right img {
+    width: 100%;
+    height: auto;
+  }
+  .main #service > div h1 {
+    letter-spacing: 0;
+  }
+  .main #download {
+    background-size: contain;
+  }
+  .main #contact > div > div {
+    margin-top: 0;
+  }
+}

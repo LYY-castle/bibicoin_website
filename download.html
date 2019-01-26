@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+        <meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+        <meta HTTP-EQUIV="Expires" CONTENT="0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>APP 下载</title>
+        <link rel="shortcut icon" href="img/bibiying.ico">
+        <style>
+                * {
+                        padding: 0;
+                        margin: 0;
+                }
+
+                html,
+                body {
+                        width: 100%;
+                        height: 0;
+                }
+
+                .main {
+                        max-width: 100%;
+                        margin: 0 auto;
+                        position: relative;
+                }
+
+                .top {
+                        width: 100%;
+                        height: auto;
+                        position: relative;
+                }
+                .top img {
+                        display: block;
+                        margin: 0 auto;
+                        width: 100%;
+                        height: 100%;
+                }
+
+                .top #logo {
+                        position: absolute;
+                        width: 100px;
+                        height: auto;
+                        left: 50%;
+                        bottom: 0;
+                        transform: translate(-50%, 60%);
+                }
+
+                .tip_msg {
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        display: none;
+                }
+
+                .tip {
+                        position: relative;
+                        height: 120px;
+                }
+
+                .tip p {
+                        position: absolute;
+                        bottom: 10px;
+                        right: 60px;
+                        font-size: 12px;
+                        color: #fff;
+                }
+
+                .tip img {
+                        position: absolute;
+                        top: 20px;
+                        right: 30px;
+                        width: 50px;
+                }
+
+                #download {
+                        display: block;
+                        cursor: pointer;
+                        width: 200px;
+                        height: 50px;
+                        margin: 0 auto;
+                        line-height: 50px;
+                        outline: none;
+                        border: none;
+                        background: url(img/download/button.png) no-repeat;
+                        background-size: 100% 100%;
+                        color: #fff;
+                        font-size: 16px;
+                        text-align: center;
+                }
+
+                .pad {
+                        padding-top: 150px;
+                }
+
+                .text {
+                        position: absolute;
+                        bottom: 30px;
+                        left: 0;
+                        width: 100%;
+                        color: rgba(51, 51, 51, 1);
+                        font-size: 14px;
+                        text-align: center;
+                }
+
+                @media(min-width:768px) {
+                        .top #logo {
+                                width: 30%;
+                        }
+
+                        .pad {
+                                padding-top: 30%;
+                        }
+
+                        #download {
+                                width: 300px;
+                                height: 80px;
+                                font-size: 25px;
+                                line-height: 80px;
+                        }
+                        .text{
+                                font-size: 25px;
+                        }
+                }
+        </style>
+</head>
+
+<body>
+        <div class="main">
+                <div class="top">
+                        <img src="img/download/top.png" alt="">
+                        <img src="img/download/logo.png" alt="" id="logo">
+                </div>
+                <div class="pad">
+                        <div id="download">下载</div>
+                </div>
+                <div class="tip_msg">
+                        <div class="tip">
+                                <img src="img/download/derection.png" alt="">
+                                <p></p>
+                        </div>
+                </div>
+                <div class="text">流通你的数字资产</div>
+        </div>
+</body>
+<!-- 百度统计 -->
+<script src="https://hm.baidu.com/hm.js?ed9692a776ab1248a6262d75aca1d631"></script>
+<script src="http://bibicoin.io/js/jquery-3.3.1.min.js"></script>
+<script src="js/download.js?201901150001"></script>
+</html>

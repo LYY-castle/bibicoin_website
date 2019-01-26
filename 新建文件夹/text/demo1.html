@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/demo1.css">
+</head>
+
+<body>
+    <section>
+        <!-- 标题 -->
+        <div class="top">
+            <div class="bc">
+                <div class="left">
+                    LOGO
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="">首页</a></li>
+                        <li><a href="">产品服务</a></li>
+                        <li><a href="">下载产品</a></li>
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- banner动画 -->
+        <div class="imgs" id="ban1">
+            <div></div>
+        </div>
+    </section>
+    <section id="ban2"></section>
+    <!-- <section id="ban2"></section>
+    <section id="ban3"></section>
+    <section id="ban4"></section>
+    <section id="ban5"></section> -->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function () {
+            function xiuxiu() {
+                var age = 18 + 2;
+                var len = 165 + 2;
+                console.log(age, len)
+            }
+            xiuxiu();
+            console.log(height)
+            var height = window.screen.height;
+            
+            $('section').css("height", height)
+        })
+    </script>
+</body>
+
+</html>

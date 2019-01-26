@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .box>div{
+            width: 200%;
+            height: 200%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .pic1{
+            transform: translateX(400px);
+            z-index: 1;
+            background-color: red;
+        }
+        .pic2{
+            transform: translateX(-400px);
+            background-color: pink;
+        }
+        .pic3{
+            transform: translateY(-50%);
+            background-color: rgb(25, 226, 193);
+        }
+        .pic4{
+            transform: translateY(-50%);
+            background-color: rgb(25, 112, 226);
+        }
+        .pic5{
+            transform: translateZ(-50%);
+            background-color: rgb(192, 25, 226);
+        }
+        .pic6{
+            transform: translateZ(-50%);
+            background-color: rgb(226, 25, 109);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic1"></div>
+        <div class="pic2"></div>
+        <div class="pic3"></div>
+        <div class="pic4"></div>
+        <div class="pic5"></div>
+        <div class="pic6"></div>
+    </div>
+</body>
+</html>
